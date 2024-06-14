@@ -46,17 +46,17 @@ repo init -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs
 
 #git clean -fdX
 #rm -rf frameworks/base/
-rm -rf .repo/local_manifests device/lge vendor/extra mkdir vendor/lineage-priv
+rm -rf .repo/local_manifests  mkdir vendor/lineage-priv
 #rm -rf device/lge/
 #rm -rf kernel/lge/msm8996
 mkdir -p .repo/local_manifests
 cp scripts/roomservice.xml .repo/local_manifests
 
-source scripts/clean.sh
-repo init --git-lfs
-rm -rf external/chromium-webview/prebuilt/*
-rm -rf .repo/projects/external/chromium-webview/prebuilt/*.git
-rm -rf .repo/project-objects/LineageOS/android_external_chromium-webview_prebuilt_*.git
+#source scripts/clean.sh
+#repo init --git-lfs
+#rm -rf external/chromium-webview/prebuilt/*
+#rm -rf .repo/projects/external/chromium-webview/prebuilt/*.git
+#rm -rf .repo/project-objects/LineageOS/android_external_chromium-webview_prebuilt_*.git
 
 main() {
     # Run repo sync command and capture the output
@@ -109,7 +109,7 @@ source build/envsetup.sh
 # git cherry-pick 936989aab95e9f7ae6bb3a1d95f18c4de98eb194
 # cd ../../../
 rm -rf ~/.android-certs
-subject='/C=PH/ST=Philippines/L=Manila/O=RexC/OU=RexC/CN=Rexc/emailAddress=dtiven13@gmail.com'
+subject='/C=PH/ST=Philippines/L=Manila/O=RexC/OU=RexC/CN=Rexc/emailAddress=sksayz@gmail.com'
 mkdir ~/.android-certs
 
 for x in releasekey platform shared media networkstack testkey cyngn-priv-app bluetooth sdk_sandbox verifiedboot; do \
@@ -133,10 +133,10 @@ filegroup(
 )
 EOF
 
-sed -i '/include $(LOCAL_PATH)\/vendor_prop.mk/a -include vendor/lineage-priv/keys/keys.mk' device/lge/msm8996-common/msm8996.mk
+#sed -i '/include $(LOCAL_PATH)\/vendor_prop.mk/a -include vendor/lineage-priv/keys/keys.mk' device/lge/msm8996-common/msm8996.mk
 
 
-lunch lineage_h872-ap1a-eng
+lunch lineage_RMX1901-ap1a-eng
 m installclean
 m bacon
 
