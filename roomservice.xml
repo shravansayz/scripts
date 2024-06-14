@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <manifest>
-  <project name="LineageOS/android_device_lge_h830" path="device/lge/h830" remote="github" revision="lineage-21" />
-  <project name="LineageOS/android_device_lge_h850" path="device/lge/h850" remote="github" revision="lineage-21" />
-  <project name="LineageOS/android_device_lge_rs988" path="device/lge/rs988" remote="github" revision="lineage-21" />
-  <project name="LineageOS/android_device_lge_h870" path="device/lge/h870" remote="github" revision="lineage-21" />
-  <project name="LineageOS/android_device_lge_h872" path="device/lge/h872" remote="github" revision="lineage-21" />
-  <project name="LineageOS/android_device_lge_us997" path="device/lge/us997" remote="github" revision="lineage-21" />
-  <project name="LineageOS/android_device_lge_g5-common" path="device/lge/g5-common" remote="github" revision="lineage-21" />
-  <project name="LineageOS/android_device_lge_g6-common" path="device/lge/g6-common" remote="github" revision="lineage-21" />
-  <project name="xc112lg/android_device_lge_msm8996-common" path="device/lge/msm8996-common" remote="github" revision="patch-5" />
-  <project name="LineageOS/android_kernel_lge_msm8996" path="kernel/lge/msm8996" remote="github" revision="lineage-21" />
-  <project name="xc112lg/android_hardware_lge" path="hardware/lge" remote="github" revision="patch-1" />
-  <project name="TheMuppets/proprietary_vendor_lge_h830" path="vendor/lge/h830" remote="github" revision="lineage-21" />
-  <project name="TheMuppets/proprietary_vendor_lge_h850" path="vendor/lge/h850" remote="github" revision="lineage-21" />
-  <project name="TheMuppets/proprietary_vendor_lge_rs988" path="vendor/lge/rs988" remote="github" revision="lineage-21" />
-  <project name="TheMuppets/proprietary_vendor_lge_h870" path="vendor/lge/h870" remote="github" revision="lineage-21" />
-  <project name="TheMuppets/proprietary_vendor_lge_h872" path="vendor/lge/h872" remote="github" revision="lineage-21" />
-  <project name="TheMuppets/proprietary_vendor_lge_us997" path="vendor/lge/us997" remote="github" revision="lineage-21" />
-  <project name="TheMuppets/proprietary_vendor_lge_msm8996-common" path="vendor/lge/msm8996-common" remote="github" revision="lineage-21" />
-  <project name="TheMuppets/proprietary_vendor_lge_g5-common" path="vendor/lge/g5-common" remote="github" revision="lineage-21" />
-  <project name="TheMuppets/proprietary_vendor_lge_g6-common" path="vendor/lge/g6-common" remote="github" revision="lineage-21" />
-  <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" revision="lineage-21" />
+
+<!-- fetching sources -->      
+
+        <remote name="shravansayz"
+                fetch="https://github.com/shravansayz" />  
+
+  
+        
+   
+<!-- device trees -->
+
+        <project path="device/realme/RMX1901" name="device_realme_RMX1901" remote="shravansayz" revision="cr14" clone-depth="1" />
+        <project path="vendor/realme/RMX1901" name="vendor_realme_RMX1901" remote="shravansayz" revision="14" clone-depth="1" />
+        <project path="kernel/realme/sdm710" name="kernel_realme_sdm710" remote="shravansayz" revision="14" clone-depth="1" />
+
+<!-- Extras -->
+        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="clang-proton" remote="shravansayz" revision="proton" clone-depth="1" />
 </manifest>
