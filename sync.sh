@@ -109,7 +109,7 @@ source build/envsetup.sh
 # git cherry-pick 936989aab95e9f7ae6bb3a1d95f18c4de98eb194
 # cd ../../../
 rm -rf ~/.android-certs
-subject='/C=PH/ST=Philippines/L=Manila/O=RexC/OU=RexC/CN=Rexc/emailAddress=sksayz@gmail.com'
+subject='/C=PH/ST=Philippines/L=Manila/O=RexC/OU=RexC/CN=Rexc/emailAddress=dtiven13@gmail.com'
 mkdir ~/.android-certs
 
 for x in releasekey platform shared media networkstack testkey cyngn-priv-app bluetooth sdk_sandbox verifiedboot; do \
@@ -137,6 +137,7 @@ EOF
 
 
 lunch lineage_RMX1901-ap1a-eng
+m clean
 m installclean
 m bacon
 
