@@ -136,8 +136,7 @@ EOF
 #sed -i '/include $(LOCAL_PATH)\/vendor_prop.mk/a -include vendor/lineage-priv/keys/keys.mk' device/lge/msm8996-common/msm8996.mk
 
 
-lunch lineage_RMX1901-ap1a-eng
-m clean
+lunch lineage_RMX1901-ap1a-user
 m installclean
 m bacon
 
