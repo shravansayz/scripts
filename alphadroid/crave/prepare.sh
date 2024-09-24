@@ -9,8 +9,12 @@ if [ ! -d vendor/lineage-priv ]; then
 fi
 
 echo -e "\n--------------------- [INFO] ---------------------"
-echo "ls of out/target/product/*:"
-ls out/target/product/*
+if [ -d out/target/product/ ]; then
+    echo "ls of out/target/product/*:"
+    ls out/target/product/*
+else
+    echo "out/target/product doesn't exists"
+fi
 echo -e "--------------------- [INFO] ---------------------\n"
 
 echo -e "\n--------------------- [INFO] ---------------------"
