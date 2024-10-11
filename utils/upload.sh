@@ -1,7 +1,6 @@
 #!/bin/bash
 
 PATTERN=""
-FIND_ARGS=("-type" "f")
 FFSEND_ARGS=("-fIqy" "--host" "https://de.skysend.ch" "--download-limit" "1000" "--expiry-time" "7d")
 FILES=()
 
@@ -11,8 +10,8 @@ if ! command -v ffsend &> /dev/null; then
 fi
 
 usage() {
-    echo "Usage: $0 (-h | --help) [path]"
-    echo "Uploads files from the specified path to the ffsend server (supports globs)."
+    echo "Usage: $0 (-h | --help) [path/pattern]"
+    echo "Uploads file(s) from the specified path to the ffsend server (supports globs)."
     echo "Options:"
     echo "  -h, --help    Show this help message"
     exit 1
