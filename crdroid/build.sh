@@ -1,5 +1,6 @@
 #!/bin/bash
 
 source build/envsetup.sh
-
-brunch sweet2 user
+lunch lineage_RMX1901-ap2a-user
+m installclean
+m bacon

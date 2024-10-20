@@ -1,3 +1,3 @@
 #!/bin/bash
 
-git clone https://github.com/xiaomi-sweet2/manifest --depth 1 -b 14.0/crdroid .repo/local_manifests
+git clone https://github.com/shravansayz/local_manifests.git --depth 1 -b crdroid .repo/local_manifests
